@@ -1,7 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, FlatList } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import navButton from "../components/navButton";
+import { Data } from "../contants/dataCategoryChips";
+import CourseCategory from "../components/CourseCategory";
 
 const Homepage = () => {
   return (
@@ -12,12 +14,25 @@ const Homepage = () => {
       {/* Search bar */}
       <View className="rounded-lg h-[50px] ml-2 mt-4 w-[350px] bg-primary-accent flex-row justify-start items-center">
         <View className="pl-7">
-        <Ionicons className="" name={"radio-button-off"} size={32} />
+          <Ionicons className="" name={"radio-button-off"} size={32} />
         </View>
         <Text className=" text-center pl-6 text-xl">Search</Text>
       </View>
 
-    
+      <View className="flex-row justify-between items-center">
+        <Text className="max-w-[300px] text-[22px] pt-6 pl-[10px]">
+          Discover Vocations
+        </Text>
+        <Text className="max-w-[300px] underline text-[14px] pt-7 pr-3">
+          View All
+        </Text>
+      </View>
+      <FlatList
+        data={Data}
+        horizontal={true}
+        renderItem={({ item }) => <CourseCategory title={item.title} />}
+        keyExtractor={(item) => item.id}
+      />
     </View>
   );
 };

@@ -4,6 +4,7 @@ import { setCustomText } from "react-native-global-props";
 import * as Font from "expo-font";
 import React, { useState } from "react";
 import AppLoading from "expo-app-loading";
+import Homepage from "./src/screens/homepage";
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -30,6 +31,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>  
+    <Homepage/>
     </View>
   );
 }

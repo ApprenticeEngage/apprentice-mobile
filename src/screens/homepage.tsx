@@ -2,8 +2,10 @@ import React from "react";
 import { View, Text, FlatList } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import navButton from "../components/navButton";
-import { Data } from "../contants/dataCategoryChips";
+import { Data } from "../contants/data";
+import { courseData } from "../contants/data";
 import CourseCategory from "../components/CourseCategory";
+import CourseTile from "../components/CourseTile";
 
 const Homepage = () => {
   return (
@@ -27,12 +29,28 @@ const Homepage = () => {
           View All
         </Text>
       </View>
-      <FlatList
-        data={Data}
-        horizontal={true}
-        renderItem={({ item }) => <CourseCategory title={item.title} />}
-        keyExtractor={(item) => item.id}
-      />
+      <View className="mb-4">
+        <FlatList
+          data={Data}
+          horizontal={true}
+          renderItem={({ item }) => <CourseCategory title={item.title} />}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
+      <View className="flex-1 items-center">
+        <FlatList
+          data={courseData}
+          renderItem={({ item }) => (
+            <CourseTile
+              title={item.title}
+              price={item.price}
+              recommendations={item.recommendations}
+              author={item.author}
+            />
+          )}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
     </View>
   );
 };

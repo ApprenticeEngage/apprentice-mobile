@@ -8,6 +8,8 @@ import AppLoading from "expo-app-loading";
 const fetchFonts = () => {
   return Font.loadAsync({
     "Assistant-Bold": require("./assets/fonts/Assistant-Bold.ttf"),
+    "Assistant-ExtraBold": require("./assets/fonts/Assistant-ExtraBold.ttf"),
+    "Assistant-Regular": require("./assets/fonts/Assistant-Bold.ttf"),
   });
 };
 
@@ -27,12 +29,7 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.Texts}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <Text  className="bg-primary-green text-[40px]">
-        Hello World regarding today
-      </Text>
+    <View style={styles.container}>  
     </View>
   );
 }
@@ -43,8 +40,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    fontFamily: "Assistant-Regular",
   },
   Texts: {
-    fontFamily: "Assistant-Bold"
+    fontFamily: "Assistant-Bold",
   },
 });

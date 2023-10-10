@@ -6,11 +6,12 @@ import { Data } from "../contants/data";
 import { courseData } from "../contants/data";
 import CourseCategory from "../components/CourseCategory";
 import CourseTile from "../components/CourseTile";
+import CustomView from "../components/CustomView";
 
-const Homepage = () => {
+const Home = () => {
   return (
     <ScrollView className="flex-1">
-      <View className="p-3 bg-bg-light flex-1 justify-start content-center min-h-screen w-screen">
+      <View>
         <Text className="max-w-[240px] text-[30px] pt-6 pl-[13px]">
           Find your mentor and Learn a Skill!
         </Text>
@@ -77,4 +78,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;

@@ -1,14 +1,14 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Homepage from "../../screens/homepage";
+import Homepage from "../../screens/home-test";
 import { Header, HeaderTitle } from "@react-navigation/elements";
 import { Ionicons } from "@expo/vector-icons";
+import test from "../../screens/Homepage";
 
 const Tab = createBottomTabNavigator();
 const options = {
   headerStyle: {
     height: 90,
   },
-  
 };
 
 function TabNavigator() {

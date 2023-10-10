@@ -1,8 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { setCustomText } from "react-native-global-props";
+import { NavigationContainer } from "@react-navigation/native";
 import * as Font from "expo-font";
 import React, { useState } from "react";
+import TabNavigator from "./src/navigation/navigators/BottomNavigator";
 import AppLoading from "expo-app-loading";
 import Homepage from "./src/screens/homepage";
 
@@ -30,9 +32,9 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>  
-    <Homepage/>
-    </View>
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
   );
 }
 

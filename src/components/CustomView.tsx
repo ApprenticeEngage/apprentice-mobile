@@ -11,12 +11,12 @@ interface CustomViewProps {
 const fetchFonts = async () => {
   await Font.loadAsync({
     "Assistant-Bold": require("../../assets/fonts/Assistant-Bold.ttf"),
-    "Assistant-ExtraBold": require("../../assets/fonts/Assistant-Bold.ttf"),
-    "Assistant-Regular": require("../../assets/fonts/Assistant-Bold.ttf"),
+    "Assistant-ExtraBold": require("../../assets/fonts/Assistant-ExtraBold.ttf"),
+    "Assistant-Regular": require("../../assets/fonts/Assistant-Regular.ttf"),
   });
 };
 
-const CustomView:React.FC<CustomViewProps> = ({ children }) => {
+const CustomView: React.FC<CustomViewProps> = ({ children }) => {
   // State to track whether fonts are loaded
   const [fontLoaded, setFontLoaded] = useState(false);
 
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ECE9F6",
     alignItems: "center",
     justifyContent: "center",
-    fontFamily: "Assistant-Regular",
+    fontFamily: "Assistant-Bold",
     padding: 12,
     minHeight: "100%",
     width: "100%",

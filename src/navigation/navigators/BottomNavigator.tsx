@@ -3,6 +3,7 @@ import Homepage from "../../screens/home-test";
 import { Header, HeaderTitle } from "@react-navigation/elements";
 import { Ionicons } from "@expo/vector-icons";
 import test from "../../screens/homepage";
+import CourseLanding from "../../screens/CourseLanding";
 
 const Tab = createBottomTabNavigator();
 const options = {
@@ -26,7 +27,7 @@ function TabNavigator() {
     >
       <Tab.Screen
         name="Home"
-        component={Homepage}
+        component={CourseLanding}
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (

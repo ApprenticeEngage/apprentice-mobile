@@ -3,6 +3,10 @@ import { StyleSheet, View, Text } from "react-native";
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 
+interface CustomViewProps {
+  children: ReactNode;
+}
+
 // Load fonts function
 const fetchFonts = async () => {
   await Font.loadAsync({
@@ -12,7 +16,7 @@ const fetchFonts = async () => {
   });
 };
 
-const CustomView = ({ children }) => {
+const CustomView:React.FC<CustomViewProps> = ({ children }) => {
   // State to track whether fonts are loaded
   const [fontLoaded, setFontLoaded] = useState(false);
 

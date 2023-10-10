@@ -6,12 +6,11 @@ import { Data } from "../contants/data";
 import { courseData } from "../contants/data";
 import CourseCategory from "../components/CourseCategory";
 import CourseTile from "../components/CourseTile";
-import CustomView from "../components/CustomView";
 
 const Home = () => {
   return (
     <ScrollView className="flex-1">
-      <View>
+      <View className="p-3">
         <Text className="max-w-[240px] text-[30px] pt-6 pl-[13px]">
           Find your mentor and Learn a Skill!
         </Text>

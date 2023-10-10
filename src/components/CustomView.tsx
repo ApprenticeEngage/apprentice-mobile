@@ -3,10 +3,6 @@ import { StyleSheet, View, Text } from "react-native";
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 
-// interface CustomViewProps {
-//   children: ReactNode;
-// }
-
 // Load fonts function
 const fetchFonts = async () => {
   await Font.loadAsync({

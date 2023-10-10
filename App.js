@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import TabNavigator from "./src/navigation/navigators/BottomNavigator";
 import Homepage from "./src/screens/home-test";
 import AppLoading from "expo-app-loading";
+import StackNav from "./src/navigation/navigators/StackNavigator";
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -30,7 +31,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <StackNav/>
     </NavigationContainer>
   );
 }

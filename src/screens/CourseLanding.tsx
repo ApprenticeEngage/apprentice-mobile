@@ -12,7 +12,9 @@ const CourseLanding = () => {
         <View className="bg-card-pic w-screen h-[125px]"></View>
         <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[400px]">
           <MyText textStyle={style.title}>Title of Vocation</MyText>
-          <MyText textStyle={style.subheading}>Who is this course for?</MyText>
+          <MyText textStyle={style.subheading}>Who Is this Course for</MyText>
+          <BulletList data={data}></BulletList>
+          <MyText textStyle={style.subheading}>What You Will Learn</MyText>
           <BulletList data={data}></BulletList>
         </View>
       </View>
@@ -29,7 +31,8 @@ const style = StyleSheet.create({
     paddingTop: 6,
   },
   subheading : {
-    fontSize: 20
+    fontSize: 20,
+    paddingTop: 5
   },
 });
 

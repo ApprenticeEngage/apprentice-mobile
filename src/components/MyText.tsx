@@ -1,8 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { useFonts } from "expo-font";
+import { Style } from "nativewind/dist/style-sheet/runtime";
 
-const MyText = ({ children }) => {
+interface Props {
+  children : ReactNode,
+  textStyle?: Style
+}
+
+const MyText = ({ children, textStyle }: Props) => {
   const [loaded] = useFonts({
     "Assistant-Bold": require("../../assets/fonts/Assistant-Bold.ttf"),
     "Assistant-ExtraBold": require("../../assets/fonts/Assistant-ExtraBold.ttf"),
@@ -13,9 +19,15 @@ const MyText = ({ children }) => {
     return null;
   }
 
+  // Define a default style for text, including the default font family
+  const defaultTextStyle = {
+    fontFamily: "Assistant-Regular",
+    // Add other default text styles here
+  };
+
   return (
     <View style={{ flex: 1 }}>
-      <Text style={{ fontFamily: "Assistant-Bold" }}>{children}</Text>
+      <Text style={[defaultTextStyle, textStyle]}>{children}</Text>
     </View>
   );
 };

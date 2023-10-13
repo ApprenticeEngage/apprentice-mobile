@@ -10,7 +10,8 @@ import Schedule from "../components/course-landing/Schedule";
 const CourseLanding = () => {
   return (
     <ScrollView className="flex-1">
-      <View className="w-screen h-screen flex justify-start bg-bg-light">
+      <View className="bg-bg-light">
+        <View>
         <View className="bg-card-pic w-screen h-[125px]"></View>
         <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[500px]">
           <MyText textStyle={style.title}>Title of Vocation</MyText>
@@ -43,9 +44,9 @@ const CourseLanding = () => {
             </View>
           </View>
         </View>
+        </View>
 
         <Schedule/>
-
 
       </View>
     </ScrollView>

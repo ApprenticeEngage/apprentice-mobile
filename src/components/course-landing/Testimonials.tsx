@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   View,
   StyleSheet,
@@ -13,7 +13,7 @@ import SubTitle from "./subTitle";
 import { ScrollView } from "react-native-gesture-handler";
 import { Curriculum, Section } from "../../types/curriculum";
 import { FontAwesome } from "@expo/vector-icons";
-import { testimonial } from '../../types/testimonial';
+import { testimonial } from "../../types/testimonial";
 
 interface Props {
   testimonies?: testimonial[]; // Add a question mark to make the prop optional
@@ -23,10 +23,10 @@ const Testimonials: React.FC<Props> = ({ testimonies }) => {
   return (
     <ScrollView className="flex-1" horizontal={true}>
       <View className="m-2 p-3 pl-5  bg-card-color rounded-2xl">
-        <MyText textStyle={{ fontSize: 31 , marginBottom: 10}}>
+        <MyText textStyle={{ fontSize: 31, marginBottom: 10 }}>
           Testimonials
         </MyText>
-        <View className="flex-row items-center justify-around">
+        <View className="flex-row items-start justify-around">
           {testimonies?.map((obj, index) => (
             <View
               className="bg-curriculum h-[147px] w-[247px] rounded-2xl p-6 flex-row justify-center items-center mr-3"
@@ -44,4 +44,4 @@ const Testimonials: React.FC<Props> = ({ testimonies }) => {
     </ScrollView>
   );
 };
-export default Testimonials
+export default Testimonials;

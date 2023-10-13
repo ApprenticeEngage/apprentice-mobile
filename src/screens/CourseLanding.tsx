@@ -53,7 +53,11 @@ const CourseLanding = () => {
 
         <Curriculum />
 
-        <Testimonials testimonies={testimonials}/>
+        <Testimonials testimonies={testimonials} />
+
+        <MyText textStyle={{ fontSize: 31 , padding: 5, paddingLeft: 18}}>Similar Courses</MyText>
+
+        
       </View>
     </ScrollView>
   );

@@ -1,3 +1,5 @@
+import { testimonial } from "../types/testimonial";
+
 // dummy data for category chips in homepage
 export const Data = [
   {
@@ -107,3 +109,54 @@ export const courseData = [
 
 
 
+export const curriculum = {
+  sections: [
+    {
+      id: "section1",
+      title: "Section 1",
+      chapters: [
+        {
+          id: "1",
+          title: "Chapter 1",
+          type: "video",
+        },
+        {
+          id: "2",
+          title: "Chapter 2",
+          type: "article",
+        },
+      ],
+    },
+    {
+      id: "section2",
+      title: "Section 2",
+      chapters: [
+        {
+          id: "3",
+          title: "Chapter 3",
+          type: "video",
+        },
+        {
+          id: "4",
+          title: "Chapter 4",
+          type: "video",
+        },
+      ],
+    },
+  ],
+};
+
+export const testimonials: testimonial[] = [
+  {
+    person: "ahmad",
+    comment: "this was very good",
+  },
+  {
+    person: "ali",
+    comment: "this was very poor",
+  },
+  {
+    person: "mahnoor",
+    comment: "this was soo cool!",
+  },
+];

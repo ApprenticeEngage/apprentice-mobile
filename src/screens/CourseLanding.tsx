@@ -7,6 +7,8 @@ import BulletList from "../components/course-landing/BulletList";
 import Instructor from "../components/course-landing/Instructor";
 import Schedule from "../components/course-landing/Schedule";
 import Curriculum from "../components/course-landing/Curriculum";
+import Testimonials from "../components/course-landing/Testimonials";
+import { testimonials } from "../contants/data";
 
 const CourseLanding = () => {
   return (
@@ -50,6 +52,8 @@ const CourseLanding = () => {
         <Schedule />
 
         <Curriculum />
+
+        <Testimonials testimonies={testimonials}/>
       </View>
     </ScrollView>
   );

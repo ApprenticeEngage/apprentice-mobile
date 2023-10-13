@@ -3,15 +3,7 @@ import { View, StyleSheet } from "react-native";
 import MyText from "../MyText";
 import Title from "./Title";
 import BulletList from "./BulletList";
-import {
-  Table,
-  TableWrapper,
-  Row,
-  Rows,
-  Col,
-  Cols,
-  Cell,
-} from "react-native-table-component";
+import { Table, Row, Rows } from "react-native-table-component";
 
 const Schedule = () => {
   return (
@@ -60,7 +52,6 @@ const tableData = [
   ["Saturday", "12-1pm"],
 ];
 
-
 const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
@@ -76,7 +67,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "white",
   },
-  text: { margin: 6, fontSize: 16, textAlign: "center" , color: "white"},
+  text: { margin: 6, fontSize: 16, textAlign: "center", color: "white" },
 });
 const data = ["hello", "world", "is bad!"];
 

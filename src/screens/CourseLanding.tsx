@@ -11,7 +11,7 @@ const CourseLanding = () => {
     <ScrollView className="flex-1">
       <View className="w-screen h-screen flex justify-start bg-bg-light">
         <View className="bg-card-pic w-screen h-[125px]"></View>
-        <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[400px]">
+        <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[500px]">
           <MyText textStyle={style.title}>Title of Vocation</MyText>
 
           <MyText textStyle={style.subheading}>Who Is this Course for</MyText>
@@ -24,14 +24,23 @@ const CourseLanding = () => {
           <View className="flex-row justify-between">
             <View className="flex-row justify-center m-3 w-[150px] items-center">
               <Ionicons name="people-sharp" size={24} color="black" />
-              <MyText textStyle={{ color: "#fffff" , paddingLeft: 5}}>Enrollments</MyText>
+              <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
+                Enrollments
+              </MyText>
             </View>
             <View className="flex-row justify-center m-3 w-[150px] items-center">
               <Ionicons name="star-sharp" size={24} color="black" />
-              <MyText textStyle={{ color: "#fffff" , paddingLeft: 5}}>Ratings</MyText>
+              <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
+                Ratings
+              </MyText>
             </View>
           </View>
 
+          <View className="pl-16 pb-3 ">
+            <View className="flex-col justify-center items-center rounded-lg h-[50px] w-[200px] bg-primary-accent ">
+              <MyText textStyle={{ fontSize: 20 }}>Enroll Me</MyText>
+            </View>
+          </View>
         </View>
       </View>
     </ScrollView>
@@ -46,7 +55,7 @@ const style = StyleSheet.create({
     textAlign: "left",
     paddingTop: 5,
     marginBottom: 4,
-    height: 120
+    height: 120,
   },
   subheading: {
     fontSize: 20,

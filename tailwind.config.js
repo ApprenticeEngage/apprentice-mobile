@@ -13,7 +13,7 @@ module.exports = {
       "primary-green": "#98B847",
       "primary-accent": "#AADF26",
       "card-pic": "#824057",
-      "curriculum": "#B8B56B",
+      curriculum: "#9C9717",
     },
   },
   plugins: [],

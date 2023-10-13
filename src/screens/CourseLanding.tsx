@@ -5,6 +5,7 @@ import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
 import BulletList from "../components/course-landing/BulletList";
 import Instructor from "../components/course-landing/Instructor";
+import Schedule from "../components/course-landing/Schedule";
 
 const CourseLanding = () => {
   return (
@@ -42,6 +43,10 @@ const CourseLanding = () => {
             </View>
           </View>
         </View>
+
+        <Schedule/>
+
+
       </View>
     </ScrollView>
   );

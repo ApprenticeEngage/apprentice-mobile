@@ -12,42 +12,41 @@ const CourseLanding = () => {
     <ScrollView className="flex-1">
       <View className="bg-bg-light">
         <View>
-        <View className="bg-card-pic w-screen h-[125px]"></View>
-        <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[500px]">
-          <MyText textStyle={style.title}>Title of Vocation</MyText>
+          <View className="bg-card-pic w-screen h-[125px]"></View>
+          <View className="bg-card-color pl-4 rounded-b-xl w-screen h-[500px]">
+            <MyText textStyle={style.title}>Title of Vocation</MyText>
 
-          <MyText textStyle={style.subheading}>Who Is this Course for</MyText>
-          <BulletList data={data}></BulletList>
-          <MyText textStyle={style.subheading}>What You Will Learn</MyText>
-          <BulletList data={data}></BulletList>
+            <MyText textStyle={style.subheading}>Who Is this Course for</MyText>
+            <BulletList icon="chevron-forward-outline" data={data}></BulletList>
+            <MyText textStyle={style.subheading}>What You Will Learn</MyText>
+            <BulletList icon="chevron-forward-outline" data={data}></BulletList>
 
-          <Instructor name="Hamid" rating={4.5}></Instructor>
+            <Instructor name="Hamid" rating={4.5}></Instructor>
 
-          <View className="flex-row justify-between">
-            <View className="flex-row justify-center m-3 w-[150px] items-center">
-              <Ionicons name="people-sharp" size={24} color="black" />
-              <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
-                Enrollments
-              </MyText>
+            <View className="flex-row justify-between">
+              <View className="flex-row justify-center m-3 w-[150px] items-center">
+                <Ionicons name="people-sharp" size={24} color="black" />
+                <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
+                  Enrollments
+                </MyText>
+              </View>
+              <View className="flex-row justify-center m-3 w-[150px] items-center">
+                <Ionicons name="star-sharp" size={24} color="black" />
+                <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
+                  Ratings
+                </MyText>
+              </View>
             </View>
-            <View className="flex-row justify-center m-3 w-[150px] items-center">
-              <Ionicons name="star-sharp" size={24} color="black" />
-              <MyText textStyle={{ color: "#fffff", paddingLeft: 5 }}>
-                Ratings
-              </MyText>
-            </View>
-          </View>
 
-          <View className="pl-16 pb-3 ">
-            <View className="flex-col justify-center items-center rounded-lg h-[50px] w-[200px] bg-primary-accent ">
-              <MyText textStyle={{ fontSize: 20 }}>Enroll Me</MyText>
+            <View className="pl-16 pb-3 ">
+              <View className="flex-col justify-center items-center rounded-lg h-[50px] w-[200px] bg-primary-accent ">
+                <MyText textStyle={{ fontSize: 20 }}>Enroll Me</MyText>
+              </View>
             </View>
           </View>
         </View>
-        </View>
 
-        <Schedule/>
-
+        <Schedule />
       </View>
     </ScrollView>
   );

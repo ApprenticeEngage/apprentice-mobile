@@ -11,17 +11,18 @@ interface CustomStyle {
 }
 
 interface Props {
-  data: string[];
-  style?: CustomStyle;
+  data: string[],
+  style?: CustomStyle,
+  icon : any
 }
 
-const BulletList = ({ data, style }: Props) => {
+const BulletList = ({ icon, data, style }: Props) => {
   return (
     <View style={style?.container}>
       {data.map((item, index) => (
         <View key={index} className="flex-row justify-start items-center">
           <Ionicons
-            name="checkmark-circle"
+            name={icon}
             size={style?.iconSize || 20}
             color={style?.iconColor}
           />

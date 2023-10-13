@@ -46,7 +46,9 @@ const CourseLanding = () => {
           </View>
         </View>
 
-        <Schedule />
+        <Schedule/>
+
+        
       </View>
     </ScrollView>
   );

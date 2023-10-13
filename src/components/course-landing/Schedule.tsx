@@ -15,7 +15,7 @@ import {
 
 const Schedule = () => {
   return (
-    <View className="bg-card-color h-[750px] pl-4 m-1 mt-5 rounded-xl flex flex-col justify-center ">
+    <View className="bg-card-color h-[750px] pl-4 m-1 mt-5 rounded-2xl flex flex-col justify-center ">
       <MyText textStyle={{ fontSize: 31, paddingTop: 14 }}> Schedule</MyText>
       <Title
         icon_name="ios-barcode-sharp"
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
     marginBottom: 10,
-    borderRadius: 20,
+    borderRadius: 10,
     justifyContent: "center",
     width: 300,
   },

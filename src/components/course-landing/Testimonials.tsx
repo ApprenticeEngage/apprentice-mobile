@@ -22,8 +22,8 @@ interface Props {
 const Testimonials: React.FC<Props> = ({ testimonies }) => {
   return (
     <ScrollView className="flex-1" horizontal={true}>
-      <View className="m-1 p-3 pl-5  bg-card-color rounded-2xl">
-        <MyText textStyle={{ fontSize: 31 }}>
+      <View className="m-2 p-3 pl-5  bg-card-color rounded-2xl">
+        <MyText textStyle={{ fontSize: 31 , marginBottom: 10}}>
           Testimonials
         </MyText>
         <View className="flex-row items-center justify-around">

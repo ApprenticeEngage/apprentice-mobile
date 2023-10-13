@@ -7,7 +7,7 @@ import { Table, Row, Rows } from "react-native-table-component";
 
 const Schedule = () => {
   return (
-    <View className="bg-card-color h-[750px] pl-4 m-1 mt-5 rounded-2xl flex flex-col justify-center ">
+    <View className="bg-card-color h-[750px] m-2 pl-4 mt-5 rounded-2xl flex flex-col justify-center ">
       <MyText textStyle={{ fontSize: 31, paddingTop: 14 }}> Schedule</MyText>
       <Title
         icon_name="ios-barcode-sharp"

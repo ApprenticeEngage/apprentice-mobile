@@ -1,14 +1,18 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
+import { Data } from "../contants/data";
+import { courseData } from "../contants/data";
 import BulletList from "../components/course-landing/BulletList";
 import Instructor from "../components/course-landing/Instructor";
 import Schedule from "../components/course-landing/Schedule";
 import Curriculum from "../components/course-landing/Curriculum";
 import Testimonials from "../components/course-landing/Testimonials";
 import { testimonials } from "../contants/data";
+import CourseCategory from "../components/CourseCategory";
+import CourseTile from "../components/CourseTile";
 
 const CourseLanding = () => {
   return (
@@ -54,10 +58,25 @@ const CourseLanding = () => {
         <Curriculum />
 
         <Testimonials testimonies={testimonials} />
-
-        <MyText textStyle={{ fontSize: 31 , padding: 5, paddingLeft: 18}}>Similar Courses</MyText>
-
-        
+        <MyText textStyle={{ fontSize: 31, padding: 5, paddingLeft: 18 }}>
+          Similar Courses
+        </MyText>
+        <View className="flex-1 items-center">
+          <FlatList
+            data={courseData}
+            horizontal={true}
+            renderItem={({ item }) => (
+              <CourseTile
+                title={item.title}
+                price={item.price}
+                recommendations={item.recommendations}
+                author={item.author}
+                horizontal={true}
+              />
+            )}
+            keyExtractor={(item) => item.id}
+          />
+        </View>
       </View>
     </ScrollView>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ViewStyle, TextStyle } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Style } from "nativewind/dist/style-sheet/runtime";
-import MyText from "./MyText";
+import MyText from "../MyText";
 
 interface CustomStyle {
   container?: ViewStyle;
@@ -25,7 +25,7 @@ const BulletList = ({ data, style }: Props) => {
             size={style?.iconSize || 20}
             color={style?.iconColor}
           />
-          <MyText textStyle={{fontSize:18, paddingLeft:6}}>{item}</MyText>
+          <MyText textStyle={{ fontSize: 18, paddingLeft: 6 }}>{item}</MyText>
         </View>
       ))}
     </View>

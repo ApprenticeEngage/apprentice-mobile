@@ -21,7 +21,7 @@ const SectionTile = ({ section }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <View className="w-[330px] p-6  mb-3 bg-curriculum rounded-2xl">
+    <View className="p-6  mb-3 bg-curriculum rounded-2xl">
       <View className="flex-row items-center justify-around">
         <TouchableWithoutFeedback onPress={() => setExpanded(!expanded)}>
           <View className="flex-row justify-evenly items-center">

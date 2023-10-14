@@ -46,6 +46,7 @@ const CourseHome = () => {
             Announcements
           </MyText>
           <Testimonials choice="Announcements" announcements={announcements} />
+          <Curriculum />
         </View>
       </View>
     </ScrollView>
@@ -58,9 +59,8 @@ const style = StyleSheet.create({
     fontSize: 40,
     textAlign: "left",
     paddingTop: 5,
-    marginBottom: 4,
     fontWeight: "",
-    height: 120,
+    height: 80,
   },
   subheading: {
     fontSize: 20,

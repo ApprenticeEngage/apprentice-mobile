@@ -21,6 +21,7 @@ const CourseHome = () => {
         <View className="bg-card-pic w-screen h-[125px]"></View>
         <View className="p-4">
           <RegularText textStyle={style.title}>Title of Vocation</RegularText>
+          {/* Current Chapter Section */}
           <MyText textStyle={{ fontSize: 31, marginBottom: 6 }}>
             Currently Learning
           </MyText>
@@ -30,7 +31,7 @@ const CourseHome = () => {
             icon={"videocam"}
             resource_type="Video"
           />
-
+          {/* Tests Section */}
           <MyText textStyle={{ fontSize: 31, marginBottom: 6 }}>
             Upcoming Tests
           </MyText>
@@ -40,6 +41,11 @@ const CourseHome = () => {
             icon={"document"}
             resource_type="Book"
           />
+          {/* Announcements Section */}
+          <MyText textStyle={{ fontSize: 31, marginBottom: 6 }}>
+            Announcements
+          </MyText>
+          <Testimonials testimonies={testimonials} />
         </View>
       </View>
     </ScrollView>

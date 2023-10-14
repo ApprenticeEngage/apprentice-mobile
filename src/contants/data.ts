@@ -1,3 +1,4 @@
+import { Announcment } from "../types/announcements";
 import { testimonial } from "../types/testimonial";
 
 // dummy data for category chips in homepage
@@ -159,4 +160,11 @@ export const testimonials: testimonial[] = [
     person: "mahnoor",
     comment: "this was soo cool!",
   },
+];
+
+export const announcements: Announcment[] = [
+  { person: "Yonda", comment: "Announcement 1" },
+  { person: "Yonda", comment: "Announcement 2" },
+  { person: "Yonda", comment: "Announcement 3" },
+  { person: "Yonda", comment: "Announcement 4" },
 ];

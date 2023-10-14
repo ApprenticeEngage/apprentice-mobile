@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
-import { courseData } from "../contants/data";
+import { announcements, courseData } from "../contants/data";
 import BulletList from "../components/course-landing/BulletList";
 import Instructor from "../components/course-landing/Instructor";
 import Schedule from "../components/course-landing/Schedule";
@@ -45,7 +45,7 @@ const CourseHome = () => {
           <MyText textStyle={{ fontSize: 31, marginBottom: 6 }}>
             Announcements
           </MyText>
-          <Testimonials testimonies={testimonials} />
+          <Testimonials choice="Announcements" announcements={announcements} />
         </View>
       </View>
     </ScrollView>

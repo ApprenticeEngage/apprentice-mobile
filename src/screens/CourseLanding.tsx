@@ -55,7 +55,7 @@ const CourseLanding = () => {
 
         <Curriculum />
 
-        <Testimonials testimonies={testimonials} />
+        <Testimonials testimonies={testimonials} choice="Testimonials" />
         <MyText textStyle={{ fontSize: 31, padding: 5, paddingLeft: 18 }}>
           Similar Courses
         </MyText>

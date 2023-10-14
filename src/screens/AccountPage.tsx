@@ -9,6 +9,7 @@ import Schedule from "../components/course-landing/Schedule";
 import Curriculum from "../components/course-landing/Curriculum";
 import Testimonials from "../components/course-landing/Testimonials";
 import { testimonials } from "../contants/data";
+import { Feather } from "@expo/vector-icons";
 import RegularText from "../components/RegularText";
 import CourseTile from "../components/CourseTile";
 import CurrentChapter from "../components/course-AfterEnrollement/CurrentChapter";
@@ -76,11 +77,11 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
             <View className="flex-row justify-around items-center  p-4">
               <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] mr-6 rounded-lg">
                 <View className="flex-row justify-start items-center pl-8">
-                  <View className="flex-row justify-center items-center pl-8">
+                  <View className="flex-row justify-center items-center">
                     <MyText textStyle={{ fontSize: 19 }}>See</MyText>
                   </View>
-                  <View className="flex-row justify-end pl-3">
-                    <Ionicons name="people-sharp" size={24} color="black" />
+                  <View className="flex-row justify-end pr-7">
+                    <Feather name="external-link" size={27} color="black" />
                   </View>
                 </View>
                 <View className="flex-row justify-start pl-1">
@@ -91,14 +92,14 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
               <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] rounded-lg">
                 <View className="flex-row justify-start items-center pl-8">
                   <View className="flex-row justify-center items-center pl-8">
-                    <MyText textStyle={{ fontSize: 19 }}>Enrolled</MyText>
+                    <MyText textStyle={{ fontSize: 19 }}>Misc</MyText>
                   </View>
                   <View className="flex-row justify-end pl-3">
-                    <MyText textStyle={{ fontSize: 32 }}>6</MyText>
+                    <MyText textStyle={{ fontSize: 32 }}></MyText>
                   </View>
                 </View>
                 <View className="flex-row justify-start pl-1">
-                  <MyText textStyle={{ fontSize: 19 }}>In</MyText>
+                  <MyText textStyle={{ fontSize: 19 }}></MyText>
                 </View>
               </View>
             </View>

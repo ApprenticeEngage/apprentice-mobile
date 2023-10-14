@@ -80,7 +80,7 @@ const item = {
 const sections = ["First", "Second", "Third"];
 const style = StyleSheet.create({
   title: {
-    fontSize: 40,
+    fontSize: 35,
     textAlign: "left",
     paddingTop: 5,
     fontWeight: "",

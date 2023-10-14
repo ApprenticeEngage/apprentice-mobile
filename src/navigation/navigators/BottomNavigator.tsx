@@ -6,6 +6,7 @@ import test from "../../screens/homepage";
 import CourseLanding from "../../screens/CourseLanding";
 import CourseHome from "../../screens/CourseHome";
 import CourseProgress from "../../screens/CourseProgress";
+import AccountPage from "../../screens/AccountPage";
 
 const Tab = createBottomTabNavigator();
 const options = {
@@ -29,7 +30,7 @@ function TabNavigator() {
     >
       <Tab.Screen
         name="Home"
-        component={CourseProgress}
+        component={AccountPage}
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (

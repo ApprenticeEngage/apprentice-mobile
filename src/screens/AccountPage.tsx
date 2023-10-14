@@ -95,15 +95,17 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
                     <MyText textStyle={{ fontSize: 19 }}>Misc</MyText>
                   </View>
                   <View className="flex-row justify-end pl-3">
-                    <MyText textStyle={{ fontSize: 32 }}></MyText>
+                    <MyText textStyle={{ fontSize: 32 }}>X</MyText>
                   </View>
                 </View>
                 <View className="flex-row justify-start pl-1">
-                  <MyText textStyle={{ fontSize: 19 }}></MyText>
+                  <MyText textStyle={{ fontSize: 19 }}>Banners</MyText>
                 </View>
               </View>
             </View>
           </View>
+
+          <RegularText textStyle={{fontSize: 28, marginTop: 15}}>Highlights</RegularText>
         </View>
       </View>
     </ScrollView>

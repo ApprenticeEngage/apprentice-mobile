@@ -13,6 +13,7 @@ import { testimonials } from "../contants/data";
 import RegularText from "../components/RegularText";
 import CourseTile from "../components/CourseTile";
 import CurrentChapter from "../components/course-AfterEnrollement/CurrentChapter";
+import CurrentCourseTile from "../components/CurrentCourses/currentCourseTile";
 
 const CourseHome = () => {
   return (
@@ -47,12 +48,33 @@ const CourseHome = () => {
           </MyText>
           <Testimonials choice="Announcements" announcements={announcements} />
           <Curriculum />
+          <CurrentCourseTile
+            title={item.title}
+            horizontal={true}
+            sections={sections}
+            total={3}
+            completed={1}
+          />
         </View>
       </View>
     </ScrollView>
   );
 };
 
+
+const item = {
+  id: "1",
+  title: "Introduction to Programming",
+  price: 4.67,
+  recommendations: 32,
+  author: "Al-shevidat",
+};
+
+const sections = [
+    "First",
+    "Second",
+    "Third"
+]
 
 const style = StyleSheet.create({
   title: {

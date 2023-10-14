@@ -25,8 +25,6 @@ const CurrentCourseTile: React.FC<CourseProps> = ({
   completed,
   sections,
 }) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [selected, setSelected] = useState("");
   return (
     <ScrollView style={{ flex: 1 }}>
       <View className="rounded-lg h-[180px] w-[350px] mb-3 bg-card-color">

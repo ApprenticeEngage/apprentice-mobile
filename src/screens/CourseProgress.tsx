@@ -20,7 +20,7 @@ const CourseProgress = () => {
     <ScrollView className="flex-1">
       <View className="bg-bg-light min-h-screen">
         <View className="flex justify-start items-center pt-10">
-          <RegularText textStyle={style.title}>Title of Vocation</RegularText>
+          <RegularText textStyle={style.title}>Course History</RegularText>
           <View className="flex-row mb-6">
             <View className="bg-primary-green p-4 rounded-2xl mr-16">
               <MyText textStyle={{ fontSize: 20 }}>Ongoing</MyText>

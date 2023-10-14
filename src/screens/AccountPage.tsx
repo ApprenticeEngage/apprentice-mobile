@@ -30,7 +30,7 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
             <Ionicons name="settings-sharp" size={24} color="black" />
           </View>
 
-          <View className="bg-card-color rounded-xl mt-2 w-[360px] h-[300px]">
+          <View className="bg-card-color rounded-xl mt-2 w-[360px] h-[350px]">
             <View className="flex-row justify-between  items-center m-4">
               <View className="bg-card-pic w-[100px] h-[90px] rounded-lg"></View>
               <View className="flex justify-between w-[200px] items-start">
@@ -71,8 +71,36 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
                   <MyText textStyle={{ fontSize: 19 }}>In</MyText>
                 </View>
               </View>
+            </View>
 
+            <View className="flex-row justify-around items-center  p-4">
+              <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] mr-6 rounded-lg">
+                <View className="flex-row justify-start items-center pl-8">
+                  <View className="flex-row justify-center items-center pl-8">
+                    <MyText textStyle={{ fontSize: 19 }}>See</MyText>
+                  </View>
+                  <View className="flex-row justify-end pl-3">
+                    <Ionicons name="people-sharp" size={24} color="black" />
+                  </View>
+                </View>
+                <View className="flex-row justify-start pl-1">
+                  <MyText textStyle={{ fontSize: 19 }}>Certifications</MyText>
+                </View>
+              </View>
 
+              <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] rounded-lg">
+                <View className="flex-row justify-start items-center pl-8">
+                  <View className="flex-row justify-center items-center pl-8">
+                    <MyText textStyle={{ fontSize: 19 }}>Enrolled</MyText>
+                  </View>
+                  <View className="flex-row justify-end pl-3">
+                    <MyText textStyle={{ fontSize: 32 }}>6</MyText>
+                  </View>
+                </View>
+                <View className="flex-row justify-start pl-1">
+                  <MyText textStyle={{ fontSize: 19 }}>In</MyText>
+                </View>
+              </View>
             </View>
           </View>
         </View>

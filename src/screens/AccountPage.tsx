@@ -44,9 +44,9 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
             </View>
 
             <View className="flex-row justify-around items-center  p-4">
-              <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px]  rounded-lg">
+              <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] mr-6 rounded-lg">
                 <View className="flex-row justify-start items-center pl-8">
-                  <View className="flex-row justify-center items-center pl-6">
+                  <View className="flex-row justify-center items-center pl-8">
                     <MyText textStyle={{ fontSize: 19 }}>Courses</MyText>
                   </View>
                   <View className="flex-row justify-end pl-3">
@@ -60,17 +60,19 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
 
               <View className="p-1 flex justify-center items-center bg-curriculum h-[80px] w-[160px] rounded-lg">
                 <View className="flex-row justify-start items-center pl-8">
-                  <View className="flex-row justify-center items-center pl-6">
-                    <MyText textStyle={{ fontSize: 19 }}>Courses</MyText>
+                  <View className="flex-row justify-center items-center pl-8">
+                    <MyText textStyle={{ fontSize: 19 }}>Enrolled</MyText>
                   </View>
                   <View className="flex-row justify-end pl-3">
-                    <MyText textStyle={{ fontSize: 32 }}>12</MyText>
+                    <MyText textStyle={{ fontSize: 32 }}>6</MyText>
                   </View>
                 </View>
                 <View className="flex-row justify-start pl-1">
-                  <MyText textStyle={{ fontSize: 19 }}>Completed</MyText>
+                  <MyText textStyle={{ fontSize: 19 }}>In</MyText>
                 </View>
               </View>
+
+
             </View>
           </View>
         </View>

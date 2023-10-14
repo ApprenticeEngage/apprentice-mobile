@@ -1,6 +1,5 @@
-import React from "react";
-import { View, Text, StyleSheet, FlatList } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import React, { useState } from "react";
+import { View, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
 import { announcements, courseData } from "../contants/data";
@@ -14,36 +13,61 @@ import RegularText from "../components/RegularText";
 import CourseTile from "../components/CourseTile";
 import CurrentChapter from "../components/course-AfterEnrollement/CurrentChapter";
 import CurrentCourseTile from "../components/CurrentCourses/currentCourseTile";
+import CompletedCourseTile from "../components/CurrentCourses/completedCourseTile";
 
 const CourseProgress = () => {
+  const [selectedView, setSelectedView] = useState("ongoing");
+
+  const handleViewSelection = (view) => {
+    setSelectedView(view);
+  };
+
   return (
     <ScrollView className="flex-1">
       <View className="bg-bg-light min-h-screen">
         <View className="flex justify-start items-center pt-10">
           <RegularText textStyle={style.title}>Course History</RegularText>
           <View className="flex-row mb-6">
-            <View className="bg-primary-green p-4 rounded-2xl mr-16">
+            <TouchableOpacity
+              onPress={() => handleViewSelection("ongoing")}
+              className={`${
+                selectedView === "ongoing"
+                  ? "bg-primary-green"
+                  : "bg-primary-accent"
+              } p-4 rounded-2xl mr-16`}
+            >
               <MyText textStyle={{ fontSize: 20 }}>Ongoing</MyText>
-            </View>
-            <View className="bg-primary-accent p-4 rounded-2xl">
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => handleViewSelection("completed")}
+              className={`${
+                selectedView === "completed"
+                  ? "bg-primary-green"
+                  : "bg-primary-accent"
+              } p-4 rounded-2xl`}
+            >
               <MyText textStyle={{ fontSize: 20 }}>Completed</MyText>
-            </View>
+            </TouchableOpacity>
           </View>
 
+          {selectedView === "ongoing" && (
+            <CurrentCourseTile
+              title={item.title}
+              horizontal={true}
+              sections={sections}
+              total={3}
+              completed={1}
+            />
+          )}
 
-          <CurrentCourseTile
-            title={item.title}
-            horizontal={true}
-            sections={sections}
-            total={3}
-            completed={1}
-          />
+          {selectedView === "completed" && (
+            <CompletedCourseTile title={item.title} total={3} />
+          )}
         </View>
       </View>
     </ScrollView>
   );
 };
-
 
 const item = {
   id: "1",
@@ -52,7 +76,6 @@ const item = {
   recommendations: 32,
   author: "Al-shevidat",
 };
-
 
 const sections = ["First", "Second", "Third"];
 const style = StyleSheet.create({

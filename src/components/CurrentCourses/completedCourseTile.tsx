@@ -15,7 +15,7 @@ interface CourseProps {
   total: number;
 }
 
-const CurrentCourseTile: React.FC<CourseProps> = ({ title, total }) => {
+const CompletedCourseTile: React.FC<CourseProps> = ({ title, total }) => {
   return (
     <ScrollView style={{ flex: 1 }}>
       <View className="rounded-lg h-[180px] w-[350px] mb-3 bg-card-color">
@@ -24,12 +24,12 @@ const CurrentCourseTile: React.FC<CourseProps> = ({ title, total }) => {
           <MyText textStyle={{ fontSize: 21 }}>{title}</MyText>
           <View className="flex flex-row justify-start items-center p-2">
             <TouchableOpacity>
-              <Ionicons name="checkbox-outline" size={21} color={"black"} />
+              <Ionicons name="checkmark-circle" size={21} color={"black"} />
             </TouchableOpacity>
             <MyText
               textStyle={{ fontSize: 20 }}
             >{`${total} / ${total} completed`}</MyText>
-            <Button title="Jump Back!" color={"#AADF26"}></Button>
+            <Button title="See Certificate!" color={"#AADF26"}></Button>
           </View>
         </View>
       </View>
@@ -37,4 +37,4 @@ const CurrentCourseTile: React.FC<CourseProps> = ({ title, total }) => {
   );
 };
 
-export default CurrentCourseTile;
+export default CompletedCourseTile;

@@ -28,7 +28,9 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
         <View className="flex pt-10 pl-4">
           <View className="flex-row justify-between items-center pr-3">
             <RegularText textStyle={style.title}>User's Account</RegularText>
+            <TouchableOpacity>
             <Ionicons name="settings-sharp" size={24} color="black" />
+            </TouchableOpacity>
           </View>
 
           <View className="bg-card-color rounded-xl mt-2 w-[360px] h-[350px]">

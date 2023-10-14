@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import test from "../../screens/homepage";
 import CourseLanding from "../../screens/CourseLanding";
 import CourseHome from "../../screens/CourseHome";
+import CourseProgress from "../../screens/CourseProgress";
 
 const Tab = createBottomTabNavigator();
 const options = {
@@ -28,7 +29,7 @@ function TabNavigator() {
     >
       <Tab.Screen
         name="Home"
-        component={CourseHome}
+        component={CourseProgress}
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? (

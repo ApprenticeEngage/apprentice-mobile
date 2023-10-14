@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
-import { Data } from "../contants/data";
 import { courseData } from "../contants/data";
 import BulletList from "../components/course-landing/BulletList";
 import Instructor from "../components/course-landing/Instructor";
@@ -11,7 +10,6 @@ import Schedule from "../components/course-landing/Schedule";
 import Curriculum from "../components/course-landing/Curriculum";
 import Testimonials from "../components/course-landing/Testimonials";
 import { testimonials } from "../contants/data";
-import CourseCategory from "../components/CourseCategory";
 import CourseTile from "../components/CourseTile";
 
 const CourseLanding = () => {

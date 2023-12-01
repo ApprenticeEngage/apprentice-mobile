@@ -5,6 +5,8 @@ import TabNavigator from "./src/navigation/navigators/BottomNavigator";
 import Homepage from "./src/screens/home-test";
 import AppLoading from "expo-app-loading";
 import StackNav from "./src/navigation/navigators/StackNavigator";
+import { ClerkProvider } from "@clerk/clerk-expo";
+const clerkey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -30,8 +32,12 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <StackNav/>
-    </NavigationContainer>
+    <ClerkProvider
+      publishableKey={clerkey}
+    >
+      <NavigationContainer>
+        <StackNav />
+      </NavigationContainer>
+    </ClerkProvider>
   );
 }

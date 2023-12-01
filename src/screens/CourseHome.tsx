@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
-import MyText from "../components/MyText";
+import MyText from "../components/reusable/MyText";
 import { Ionicons } from "@expo/vector-icons";
 import { announcements, courseData } from "../contants/data";
 import BulletList from "../components/course-landing/BulletList";
@@ -10,8 +10,8 @@ import Schedule from "../components/course-landing/Schedule";
 import Curriculum from "../components/course-landing/Curriculum";
 import Testimonials from "../components/course-landing/Testimonials";
 import { testimonials } from "../contants/data";
-import RegularText from "../components/RegularText";
-import CourseTile from "../components/CourseTile";
+import RegularText from "../components/reusable/RegularText";
+import CourseTile from "../components/reusable/CourseTile";
 import CurrentChapter from "../components/course-AfterEnrollement/CurrentChapter";
 import CurrentCourseTile from "../components/CurrentCourses/currentCourseTile";
 
@@ -48,16 +48,11 @@ const CourseHome = () => {
           </MyText>
           <Testimonials choice="Announcements" announcements={announcements} />
           <Curriculum />
-          
         </View>
       </View>
     </ScrollView>
   );
 };
-
-
-
-
 
 const style = StyleSheet.create({
   title: {

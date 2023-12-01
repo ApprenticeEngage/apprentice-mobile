@@ -10,7 +10,7 @@ interface Props {
 
 const MyText = ({ children, textStyle }: Props) => {
   const [loaded] = useFonts({
-    "Assistant-Regular": require("../../assets/fonts/Assistant-Regular.ttf"),
+    "Assistant-Regular": require("../../../assets/fonts/Assistant-Regular.ttf"),
   });
 
   if (!loaded) {

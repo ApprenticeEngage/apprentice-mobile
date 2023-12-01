@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import MyText from "../MyText";
+import MyText from "../reusable/MyText";
 import { ScrollView } from "react-native-gesture-handler";
 
 interface Props {

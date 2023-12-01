@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import MyText from "../MyText";
+import MyText from "../reusable/MyText";
 import Title from "./Title";
 import BulletList from "./BulletList";
 import { Table, Row, Rows } from "react-native-table-component";

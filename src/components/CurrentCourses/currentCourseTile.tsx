@@ -7,7 +7,7 @@ import {
   FlatList,
   Button,
 } from "react-native";
-import MyText from "../MyText";
+import MyText from "../reusable/MyText";
 import { Ionicons } from "@expo/vector-icons";
 
 interface CourseProps {
@@ -45,8 +45,5 @@ const CurrentCourseTile: React.FC<CourseProps> = ({
     </ScrollView>
   );
 };
-
-
-
 
 export default CurrentCourseTile;

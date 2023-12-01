@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from "react-native";
-import MyText from "../MyText";
+import MyText from "../reusable/MyText";
 import { Ionicons } from "@expo/vector-icons";
 import Title from "./Title";
 import SubTitle from "./subTitle";
@@ -25,7 +25,9 @@ const SectionTile = ({ section }) => {
       <View className="flex-row items-center justify-around">
         <TouchableWithoutFeedback onPress={() => setExpanded(!expanded)}>
           <View className="flex-row justify-evenly items-center">
-            <MyText textStyle={{ fontSize: 18 }}>{`${section.id}        -`}</MyText>
+            <MyText
+              textStyle={{ fontSize: 18 }}
+            >{`${section.id}        -`}</MyText>
             <MyText textStyle={{ fontSize: 18 }}>{section.title}</MyText>
             {expanded ? (
               <FontAwesome name="minus-circle" size={24} color="black" />

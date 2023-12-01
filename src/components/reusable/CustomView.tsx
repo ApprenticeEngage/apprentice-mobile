@@ -10,9 +10,9 @@ interface CustomViewProps {
 // Load fonts function
 const fetchFonts = async () => {
   await Font.loadAsync({
-    "Assistant-Bold": require("../../assets/fonts/Assistant-Bold.ttf"),
-    "Assistant-ExtraBold": require("../../assets/fonts/Assistant-ExtraBold.ttf"),
-    "Assistant-Regular": require("../../assets/fonts/Assistant-Regular.ttf"),
+    "Assistant-Bold": require("../../../assets/fonts/Assistant-Bold.ttf"),
+    "Assistant-ExtraBold": require("../../../assets/fonts/Assistant-ExtraBold.ttf"),
+    "Assistant-Regular": require("../../../assets/fonts/Assistant-Regular.ttf"),
   });
 };
 

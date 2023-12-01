@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, FlatList, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import navButton from "../components/navButton";
+import navButton from "../components/reusable/navButton";
 import { Data } from "../contants/data";
 import { courseData } from "../contants/data";
-import CourseCategory from "../components/CourseCategory";
-import CourseTile from "../components/CourseTile";
+import CourseCategory from "../components/reusable/CourseCategory";
+import CourseTile from "../components/reusable/CourseTile";
 
 const Home = () => {
   return (

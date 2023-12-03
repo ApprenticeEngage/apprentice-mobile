@@ -46,7 +46,4 @@ const CurrentCourseTile: React.FC<CourseProps> = ({
   );
 };
 
-
-
-
 export default CurrentCourseTile;

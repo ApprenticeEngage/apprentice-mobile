@@ -25,7 +25,9 @@ const SectionTile = ({ section }) => {
       <View className="flex-row items-center justify-around">
         <TouchableWithoutFeedback onPress={() => setExpanded(!expanded)}>
           <View className="flex-row justify-evenly items-center">
-            <MyText textStyle={{ fontSize: 18 }}>{`${section.id}        -`}</MyText>
+            <MyText
+              textStyle={{ fontSize: 18 }}
+            >{`${section.id}        -`}</MyText>
             <MyText textStyle={{ fontSize: 18 }}>{section.title}</MyText>
             {expanded ? (
               <FontAwesome name="minus-circle" size={24} color="black" />

@@ -29,7 +29,7 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
           <View className="flex-row justify-between items-center pr-3">
             <RegularText textStyle={style.title}>User's Account</RegularText>
             <TouchableOpacity>
-            <Ionicons name="settings-sharp" size={24} color="black" />
+              <Ionicons name="settings-sharp" size={24} color="black" />
             </TouchableOpacity>
           </View>
 
@@ -107,7 +107,9 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
             </View>
           </View>
 
-          <RegularText textStyle={{fontSize: 28, marginTop: 15}}>Highlights</RegularText>
+          <RegularText textStyle={{ fontSize: 28, marginTop: 15 }}>
+            Highlights
+          </RegularText>
         </View>
       </View>
     </ScrollView>

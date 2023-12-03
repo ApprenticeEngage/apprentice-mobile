@@ -48,16 +48,11 @@ const CourseHome = () => {
           </MyText>
           <Testimonials choice="Announcements" announcements={announcements} />
           <Curriculum />
-          
         </View>
       </View>
     </ScrollView>
   );
 };
-
-
-
-
 
 const style = StyleSheet.create({
   title: {

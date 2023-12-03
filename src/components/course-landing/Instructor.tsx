@@ -8,7 +8,7 @@ interface Props {
   rating: number;
 }
 
-const Instructor: React.FC<Props> = ({name, rating }: Props) => {
+const Instructor: React.FC<Props> = ({ name, rating }: Props) => {
   return (
     <View className="h-[60px] flex-row justify-start mt-4">
       <Ionicons name="radio-button-on" size={45} color={"black"} />

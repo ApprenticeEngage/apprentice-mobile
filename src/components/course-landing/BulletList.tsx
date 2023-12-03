@@ -11,9 +11,9 @@ interface CustomStyle {
 }
 
 interface Props {
-  data: string[],
-  style?: CustomStyle,
-  icon : any
+  data: string[];
+  style?: CustomStyle;
+  icon: any;
 }
 
 const BulletList = ({ icon, data, style }: Props) => {

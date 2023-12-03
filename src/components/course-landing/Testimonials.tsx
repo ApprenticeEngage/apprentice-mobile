@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from "react-native";
-import MyText from "../reusable/MyText";
+import MyText from "../MyText";
 import { Ionicons } from "@expo/vector-icons";
 import Title from "./Title";
 import SubTitle from "./subTitle";

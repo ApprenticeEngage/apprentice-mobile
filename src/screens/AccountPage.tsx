@@ -1,6 +1,6 @@
 import React from "react";
 import { View, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
-import MyText from "../components/reusable/MyText";
+import MyText from "../components/MyText";
 import { Ionicons } from "@expo/vector-icons";
 import { announcements, courseData } from "../contants/data";
 import BulletList from "../components/course-landing/BulletList";
@@ -10,8 +10,8 @@ import Curriculum from "../components/course-landing/Curriculum";
 import Testimonials from "../components/course-landing/Testimonials";
 import { testimonials } from "../contants/data";
 import { Feather } from "@expo/vector-icons";
-import RegularText from "../components/reusable/RegularText";
-import CourseTile from "../components/reusable/CourseTile";
+import RegularText from "../components/RegularText";
+import CourseTile from "../components/CourseTile";
 import CurrentChapter from "../components/course-AfterEnrollement/CurrentChapter";
 import CurrentCourseTile from "../components/CurrentCourses/currentCourseTile";
 import CompletedCourseTile from "../components/CurrentCourses/completedCourseTile";
@@ -29,7 +29,7 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
           <View className="flex-row justify-between items-center pr-3">
             <RegularText textStyle={style.title}>User's Account</RegularText>
             <TouchableOpacity>
-              <Ionicons name="settings-sharp" size={24} color="black" />
+            <Ionicons name="settings-sharp" size={24} color="black" />
             </TouchableOpacity>
           </View>
 
@@ -107,9 +107,7 @@ const AccountPage: React.FC<Props> = ({ username, skills }) => {
             </View>
           </View>
 
-          <RegularText textStyle={{ fontSize: 28, marginTop: 15 }}>
-            Highlights
-          </RegularText>
+          <RegularText textStyle={{fontSize: 28, marginTop: 15}}>Highlights</RegularText>
         </View>
       </View>
     </ScrollView>

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ViewStyle, TextStyle } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Style } from "nativewind/dist/style-sheet/runtime";
-import MyText from "../reusable/MyText";
+import MyText from "../MyText";
 
 interface CustomStyle {
   container?: ViewStyle;
@@ -11,9 +11,9 @@ interface CustomStyle {
 }
 
 interface Props {
-  data: string[];
-  style?: CustomStyle;
-  icon: any;
+  data: string[],
+  style?: CustomStyle,
+  icon : any
 }
 
 const BulletList = ({ icon, data, style }: Props) => {

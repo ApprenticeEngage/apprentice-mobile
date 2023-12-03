@@ -1,14 +1,14 @@
 import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import MyText from "../reusable/MyText";
+import MyText from "../MyText";
 
 interface Props {
   name: string;
   rating: number;
 }
 
-const Instructor: React.FC<Props> = ({ name, rating }: Props) => {
+const Instructor: React.FC<Props> = ({name, rating }: Props) => {
   return (
     <View className="h-[60px] flex-row justify-start mt-4">
       <Ionicons name="radio-button-on" size={45} color={"black"} />

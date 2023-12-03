@@ -7,7 +7,7 @@ import {
   FlatList,
   Button,
 } from "react-native";
-import MyText from "../reusable/MyText";
+import MyText from "../MyText";
 import { Ionicons } from "@expo/vector-icons";
 
 interface CourseProps {

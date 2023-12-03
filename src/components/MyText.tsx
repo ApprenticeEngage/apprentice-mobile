@@ -10,9 +10,9 @@ interface Props {
 
 const MyText = ({ children, textStyle }: Props) => {
   const [loaded] = useFonts({
-    "Assistant-Bold": require("../../../assets/fonts/Assistant-Bold.ttf"),
-    "Assistant-ExtraBold": require("../../../assets/fonts/Assistant-ExtraBold.ttf"),
-    "Assistant-Regular": require("../../../assets/fonts/Assistant-Regular.ttf"),
+    "Assistant-Bold": require("../../assets/fonts/Assistant-Bold.ttf"),
+    "Assistant-ExtraBold": require("../../assets/fonts/Assistant-ExtraBold.ttf"),
+    "Assistant-Regular": require("../../assets/fonts/Assistant-Regular.ttf"),
   });
 
   if (!loaded) {

@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./home-test";
-import CustomView from "../components/reusable/CustomView";
+import CustomView from "../components/CustomView";
 
 const Homepage = () => {
   return (

@@ -20,9 +20,9 @@ function TabNavigator() {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarActiveBackgroundColor: "#D8D0EC",
+        tabBarActiveBackgroundColor: "#D5ECD4",
         tabBarLabelStyle: {
-          marginBottom: 7,
+          marginBottom: 4,
           color: "#000000",
           fontSize: 13,
         },

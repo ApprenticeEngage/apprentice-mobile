@@ -1,7 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import Homepage from "../../screens/homepage";
 import TabNavigator from "./BottomNavigator";
-import SignUpScreen from "../../auth/_login";
 
 const Stack = createStackNavigator();
 
@@ -13,7 +12,7 @@ function StackNav() {
         component={TabNavigator}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="Home" component={SignUpScreen} />
+      <Stack.Screen name="Home" component={Homepage} />
     </Stack.Navigator>
   );
 }
